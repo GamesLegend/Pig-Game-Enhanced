@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pig-game-icon.jpg" />
+    <title>Pig Game Enhanced</title>
+  </head>
+  <body>
+    <main>
+      <!-- Adding new features -->
+      <section class="before-start">
+        <h1>Pig Game Enhanced</h1>
+        <div class="enter-username-container">
+          <label for="name">Player 1</label>
+          <input
+            type="text"
+            class="input--field--1"
+            placeholder="Enter the username (between 1 and 10)"
+          />
+          <label for="name">Player 2</label>
+          <input
+            type="text"
+            class="input--field--2"
+            placeholder="Enter the username (between 1 and 10)"
+          />
+        </div>
+        <div class="change-theme">
+          <h2 class="secondary-header">Change theme:</h2>
+          <div class="theme-btn-container">
+            <button class="theme-btn" title="Default" id="default"></button>
+            <button
+              class="theme-btn"
+              title="Crimson Sunrise"
+              id="crimson--sunrise"
+            ></button>
+            <button
+              class="theme-btn"
+              title="Monochrome Elegance"
+              id="monochrome--elegance"
+            ></button>
+            <button
+              class="theme-btn"
+              title="Ocean Breeze"
+              id="ocean--breeze"
+            ></button>
+            <button
+              class="theme-btn"
+              title="Nature's Embrace"
+              id="natures--embrace"
+            ></button>
+            <button
+              class="theme-btn"
+              title="Midnight Gold"
+              id="midnight--gold"
+            ></button>
+          </div>
+        </div>
+        <button class="start-btn">Start</button>
+        <h2 class="secondary-header">This game is all about luck</h2>
+        <h3 class="tertiary-header">
+          "Luck is when preparation meets opportunity"
+        </h3>
+        <p class="start-paragraph">- Seneca</p>
+      </section>
+
+      <section class="player player--0 player--active">
+        <h2 class="winner-header">winner!</h2>
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <section class="endgame-stats">
+        <div class="player--0 player-stats first--player">
+          <h2 class="winner-header winner-header-2">winner!</h2>
+          <div>
+            <h2 class="name endgame-name endgame-name-1">Player 1</h2>
+            <p class="score endgame-score endgame-score-1">85</p>
+          </div>
+          <div class="endgame-span-box">
+            <span class="stats-span">
+              <h3 class="tertiary-header">Number of Turns:</h3>
+              <p class="endgame-stats-p" id="player--1--turn">4</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">Score Held:</h3>
+              <p class="endgame-stats-p" id="score--held--1">3</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">Dice Rolled:</h3>
+              <p class="endgame-stats-p" id="dice--rolled--1">16</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">1 Was Rolled:</h3>
+              <p class="endgame-stats-p" id="one--was--rolled--1">9</p>
+            </span>
+          </div>
+        </div>
+        <div class="player--1 player-stats second--player">
+          <div>
+            <h2 class="name endgame-name endgame-name-2">Player 2</h2>
+            <p class="score endgame-score endgame-score-2">103</p>
+          </div>
+          <div class="endgame-span-box">
+            <span class="stats-span">
+              <h3 class="tertiary-header">Number of Turns:</h3>
+              <p class="endgame-stats-p" id="player--2--turn">7</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">Score Held:</h3>
+              <p class="endgame-stats-p" id="score--held--2">8</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">Dice Rolled:</h3>
+              <p class="endgame-stats-p" id="dice--rolled--2">27</p>
+            </span>
+            <span class="stats-span">
+              <h3 class="tertiary-header">1 Was Rolled:</h3>
+              <p class="endgame-stats-p" id="one--was--rolled--2">8</p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--continue">▶ Continue</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
